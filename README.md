@@ -1,8 +1,8 @@
-#Détection de fraude bancaire
+#  Détection de fraude bancaire
 
-##Cybersécurité financière & Machine Learning
+##  Cybersécurité financière & Machine Learning
 
-### Description du projet
+###  Description du projet
 
 Ce projet traite un problème critique de **cybersécurité financière** : la détection de transactions bancaires frauduleuses dans un environnement **fortement déséquilibré**, où moins de 0,2 % des transactions sont frauduleuses.
 
@@ -10,7 +10,7 @@ L’objectif principal n’est pas la précision globale, mais la **réduction d
 
 Le projet repose sur le dataset **Credit Card Fraud Detection** (Kaggle) et explore plusieurs approches de détection d’anomalies et de classification supervisée.
 
-### Objectifs
+###  Objectifs
 
 * Détecter efficacement les transactions frauduleuses
 * Atteindre :
@@ -25,7 +25,7 @@ Le projet repose sur le dataset **Credit Card Fraud Detection** (Kaggle) et expl
 * Optimiser le **seuil de décision**
 * Analyser les erreurs (fraudes manquées)
 
-### Dataset
+###  Dataset
 
 * **Nom** : Credit Card Fraud Detection
 * **Source** : Kaggle
@@ -43,17 +43,16 @@ Le projet repose sur le dataset **Credit Card Fraud Detection** (Kaggle) et expl
 📎 Lien Kaggle :
 [https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
 
----
 
-## 🧠 Méthodes utilisées
+###  Méthodes utilisées
 
-### 1️⃣ Prétraitement
+####  Prétraitement
 
 * Normalisation de la variable `Amount` avec `StandardScaler`
 * Séparation **train / test (80 % / 20 %)**
 * Stratification pour conserver la proportion de fraudes
 
-### 2️⃣ Modèles testés
+#### Modèles testés
 
 * **Isolation Forest**
 
@@ -65,14 +64,13 @@ Le projet repose sur le dataset **Credit Card Fraud Detection** (Kaggle) et expl
 
   * Rééquilibrage artificiel de la classe minoritaire
 
-### 3️⃣ Optimisation du seuil
+####  Optimisation du seuil
 
 * Utilisation de la **courbe Precision–Recall**
 * Choix d’un seuil maximisant le rappel tout en limitant les faux positifs
 
----
 
-## 📈 Métriques d’évaluation
+###  Métriques d’évaluation
 
 Les métriques suivantes ont été utilisées :
 
@@ -86,9 +84,8 @@ Les métriques suivantes ont été utilisées :
 
 ⚠️ **L’accuracy n’est pas utilisée comme métrique principale**, car elle est trompeuse dans un contexte déséquilibré.
 
----
 
-## 📊 Visualisations produites
+###  Visualisations produites
 
 * Répartition des classes (fraude / non fraude)
 * Distribution des montants des transactions
@@ -98,9 +95,8 @@ Les métriques suivantes ont été utilisées :
 * Matrices de confusion
 * Comparaison des performances des modèles
 
----
 
-## 🧪 Résultats principaux
+###  Résultats principaux
 
 | Modèle                               | Recall      | ROC-AUC    | Commentaire           |
 | ------------------------------------ | ----------- | ---------- | --------------------- |
@@ -109,9 +105,8 @@ Les métriques suivantes ont été utilisées :
 | XGBoost + seuil optimisé             | Élevé       | > 0.95     | Bon compromis         |
 | **XGBoost + SMOTE + seuil optimisé** | **> 90 %**  | **> 0.95** | ✅ **Meilleur modèle** |
 
----
 
-## 🔍 Analyse des erreurs
+###  Analyse des erreurs
 
 Les fraudes non détectées présentent souvent :
 
@@ -122,7 +117,7 @@ Les fraudes non détectées présentent souvent :
 Cela met en évidence les limites des modèles purement statistiques et la nécessité de systèmes hybrides (règles métier + ML).
 
 
-## 🚀 Exécution du projet (Google Colab)
+###  Exécution du projet (Google Colab)
 
 1. Télécharger le dataset depuis Kaggle
 2. Importer le fichier CSV dans Colab
@@ -135,9 +130,7 @@ Cela met en évidence les limites des modèles purement statistiques et la néce
    * Évaluation et visualisations
 
 
-## 📜 Licence
+###  Licence
 
 Ce projet est réalisé dans un **cadre académique**.
-Usage pédagogique uniquement.
-
-Dis-moi 👍
+Usage pédagogique uniquement
